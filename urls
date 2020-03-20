@@ -1,0 +1,9 @@
+Urls for use:
+
+POST
+
+ramcraft.ddns.net:8080/up
+ramcraft.ddns.net:8080/down
+ramcraft.ddns.net:8080/left
+ramcraft.ddns.net:8080/right
+ramcraft.ddns.net:8080/drop
