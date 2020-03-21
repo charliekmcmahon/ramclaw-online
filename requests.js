@@ -28,7 +28,7 @@ function swicherydoo(){
     if (currentVid = "http://ramcraft.ddns.net:8082/video"){
       currentVid = "http://ramcraft.ddns.net:8081/video";
     }
-    else {
+    else if (currentVid = "http://ramcraft.ddns.net:8081/video"{
       currentVid = "http://ramcraft.ddns.net:8082/video";
     }
 }
