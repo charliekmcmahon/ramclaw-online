@@ -45,8 +45,8 @@ h4{
 .circle-button a:hover {
   background: #eee;
 }
-.circle-button a.up:active:before {
-  border-bottom-color: #333;
+.circle-button a:active {
+  color: #333;
 }
 
 .set {
