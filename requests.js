@@ -1,4 +1,4 @@
-var currentVid = "http://ramcraft.ddns.net:8081/video";
+var currentVid = "'http://ramcraft.ddns.net:8081/video'";
 function up() {
     var up = new XMLHttpRequest();
     up.open("GET","http://ramcraft.ddns.net:8080/up");
@@ -20,12 +20,12 @@ function right() {
     right.send();
 }
 function swicherydoo(){
-    document.getElementById("stream").src="currentVid";
-    if (currentVid.text = "http://ramcraft.ddns.net:8082/video"){
-      currentVid.text = "http://ramcraft.ddns.net:8081/video";
+    document.getElementById("stream").src=currentVid;
+    if (currentVid.text = "'http://ramcraft.ddns.net:8082/video'"){
+      currentVid.text = "'http://ramcraft.ddns.net:8081/video'";
     }
     else {
-      currentVid.text = "http://ramcraft.ddns.net:8082/video";
+      currentVid.text = "'http://ramcraft.ddns.net:8082/video'";
     }
 }
 function drop() {
