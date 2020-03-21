@@ -21,40 +21,32 @@ h4{
 
 }
 
-.container {
-  position: absolute;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-}
-
-/** Button Code **/
-
 .circle-button {
-  width: 72px;
-  height: 72px;
-  line-height: 72px;
-  display: block;
-  position: relative;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #bbb;
   border-radius: 50%;
-  border: 1px solid #000000;
-  text-align: center;
   display: inline-block;
-  vertical-align: middle;
+  text-align: center;
+  line-height: 100px;
   position: fixed;
-  z-index: 10;
-  color: #333;
-  left: 1000;
-  top: 500;
+  left: 1100px;
+  top: 300px;
+  background: #ddd;
 }
+.circle-button a{
+  color: #aaa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  cursor-events: none;
 
-.circle-button:hover {
-  color: #faf;
+}
+.circle-button a:hover {
+  background: #eee;
+}
+.circle-button a.up:active:before {
+  border-bottom-color: #333;
 }
 
 .set {
