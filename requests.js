@@ -1,4 +1,6 @@
-var currentVid = "http://ramcraft.ddns.net:8082/video";
+var mainCamera = "http://ramcraft.ddns.net:8081/video"
+var sideCamera = "http://ramcraft.ddns.net:8082/video"
+
 function up() {
     var up = new XMLHttpRequest();
     up.open("GET","http://ramcraft.ddns.net:8080/up");
@@ -20,17 +22,20 @@ function right() {
     right.send();
 }
 function swicherydoo(){
-    console.log("swicherydoo called");
-    console.log("currentVid value:" + currentVid);
-    document.getElementById("stream").src=currentVid;
-    console.log("Stream value:" + document.getElementById("stream").src)
 
-    if (currentVid = "http://ramcraft.ddns.net:8082/video"){
-      currentVid = "http://ramcraft.ddns.net:8081/video";
+    console.log(currentVid);
+
+    document.getElementById("stream").src = currentVid;
+
+    if (currentVid == mainCamera){
+      currentVid = sideCamera;
+      console.log("if");
     }
-    else if (currentVid = "http://ramcraft.ddns.net:8081/video"{
-      currentVid = "http://ramcraft.ddns.net:8082/video";
+    else {
+      currentVid = mainCamera;
+      console.log("else");
     }
+
 }
 function drop() {
     var drop = new XMLHttpRequest();
@@ -39,3 +44,4 @@ function drop() {
 }
 
 console.log("JavaScript is loaded!");
+var currentVid = "http://ramcraft.ddns.net:8082/video";
