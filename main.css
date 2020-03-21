@@ -49,6 +49,34 @@ h4{
   color: #333;
 }
 
+.switch-button {
+  height: 50px;
+  width: 200px;
+  background-color: #bbb;
+  border-radius: 5%;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  left: 950px;
+  top: 500px;
+  background: #ddd;
+}
+.switch-button a{
+  color: #aaa;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  cursor-events: none;
+
+}
+.switch-button a:hover {
+  background: #eee;
+}
+.switch-button a:active {
+  color: #333;
+}
+
 .set {
   overflow: hidden;
   padding: 30px;

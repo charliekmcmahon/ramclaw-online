@@ -18,9 +18,13 @@ function right() {
     right.open("GET","http://ramcraft.ddns.net:8080/right");
     right.send();
 }
+function swicherydoo(){
+    document.getElementById("stream").src="http://ramcraft.ddns.net:8082/video";
+}
 function drop() {
     var drop = new XMLHttpRequest();
     drop.open("GET","http://ramcraft.ddns.net:8080/drop");
     drop.send();
 }
+
 console.log("JavaScript is loaded!");
