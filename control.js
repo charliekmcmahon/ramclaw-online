@@ -1,4 +1,5 @@
-
+// Code © 2020 Charlie McMahon. All Rights Reserved.
+//
 var fired = false;
 
 document.onkeydown = function(event) {
