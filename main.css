@@ -1,7 +1,7 @@
 body{
 
-  background-color: #fff
-
+background: rgb(97,208,149);
+background: linear-gradient(270deg, rgba(97,208,149,1) 0%, rgba(54,201,198,1) 100%);
 }
 h1{
 
