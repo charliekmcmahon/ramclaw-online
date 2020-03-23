@@ -309,3 +309,31 @@ h4{
 .d-pad.right a.right:before {
   border-left-color: #333;
 }
+.footer-link{
+
+  font-size: 1.23rem;
+  font-weight: bold;
+  font-family: 'Lato';
+  padding-bottom: 20px;
+  color: #4f3961;
+
+}
+
+.bottom-container{
+
+  background-color: #bababa;
+  position: fixed;
+  bottom: 1px;
+  width: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+
+}
+
+.bottom-container a{
+
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+
+}
