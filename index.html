@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="title">
-    <h1>RamClaw alpha 0.0.9</h1>
+    <h1>RamClaw alpha 0.1.0</h1>
     <h4>© 2020, Charlie McMahon and Sam Pilgrim. All rights reserved.</h4>
     </div>
     <div class="set">
@@ -21,10 +21,10 @@
   </div>
 
   <nav class="d-pad">
-    <a class="up" onmousedown="up()"></a>
-    <a class="right" onmousedown="right()"></a>
-    <a class="down" onmousedown="down()"></a>
-    <a class="left" onmousedown="left()"></a>
+    <a class="up" onmousedown="up()" onmouseup="stop()"></a>
+    <a class="right" onmousedown="right()" onmouseup="stop()"></a>
+    <a class="down" onmousedown="down()" onmouseup="stop()"></a>
+    <a class="left" onmousedown="left()" onmouseup="stop()"></a>
   </nav>
   <div class="circle-button">
     <a onclick="drop()" class="circle-button">DROP</a>

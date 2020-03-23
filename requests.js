@@ -21,6 +21,18 @@ function right() {
     right.open("GET","http://ramcraft.ddns.net:8080/right");
     right.send();
 }
+function stop() {
+    var stop = new XMLHttpRequest();
+    stop.open("GET","http://ramcraft.ddns.net:8080/stop");
+    stop.send();
+    stopfailsafe()
+}
+function stopfailsafe() {
+    var stopfailsafe = new XMLHttpRequest();
+    stopfailsafe.open("GET","http://ramcraft.ddns.net:8080/stop");
+    stopfailsafe.send();
+}
+
 function swicherydoo(){
 
     console.log(currentVid);
