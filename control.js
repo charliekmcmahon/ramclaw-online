@@ -7,26 +7,32 @@ function checkKey(e) {
 
     if (e.keyCode == '38') {
         up();
+        keyCode = '0'
         checkKeyUp();
     }
     else if (e.keyCode == '40') {
         down();
+        keyCode = '0'
         checkKeyUp();
     }
     else if (e.keyCode == '37') {
        left();
+       keyCode = '0'
        checkKeyUp();
     }
     else if (e.keyCode == '39') {
        right();
+       keyCode = '0'
        checkKeyUp();
     }
     else if (e.keyCode == '32') {
        drop();
+       keyCode = '0'
        checkKeyUp();
     }
     else if (e.keyCode == '83') {
        swicherydoo();
+       keyCode = '0'
        checkKeyUp();
     }
 
