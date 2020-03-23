@@ -1,35 +1,35 @@
-var mainCamera = "https://ramcraft.ddns.net:8081/video"
-var sideCamera = "https://ramcraft.ddns.net:8082/video"
+var mainCamera = "http://ramcraft.ddns.net:8081/video"
+var sideCamera = "http://ramcraft.ddns.net:8082/video"
 
 function up() {
     var up = new XMLHttpRequest();
-    up.open("GET","https://ramcraft.ddns.net:8080/up");
+    up.open("GET","http://ramcraft.ddns.net:8080/up");
     up.send();
 }
 function down() {
     var down = new XMLHttpRequest();
-    down.open("GET","https://ramcraft.ddns.net:8080/down");
+    down.open("GET","http://ramcraft.ddns.net:8080/down");
     down.send();
 }
 function left() {
     var left = new XMLHttpRequest();
-    left.open("GET","https://ramcraft.ddns.net:8080/left");
+    left.open("GET","http://ramcraft.ddns.net:8080/left");
     left.send();
 }
 function right() {
     var right = new XMLHttpRequest();
-    right.open("GET","https://ramcraft.ddns.net:8080/right");
+    right.open("GET","http://ramcraft.ddns.net:8080/right");
     right.send();
 }
 function stop() {
     var stop = new XMLHttpRequest();
-    stop.open("GET","https://ramcraft.ddns.net:8080/stop");
+    stop.open("GET","http://ramcraft.ddns.net:8080/stop");
     stop.send();
     stopfailsafe();
 }
 function stopfailsafe() {
     var stopfailsafe = new XMLHttpRequest();
-    stopfailsafe.open("GET","https://ramcraft.ddns.net:8080/stop");
+    stopfailsafe.open("GET","http://ramcraft.ddns.net:8080/stop");
     stopfailsafe.send();
 }
 
@@ -51,9 +51,9 @@ function swicherydoo(){
 }
 function drop() {
     var drop = new XMLHttpRequest();
-    drop.open("GET","https://ramcraft.ddns.net:8080/drop");
+    drop.open("GET","http://ramcraft.ddns.net:8080/drop");
     drop.send();
 }
 
 console.log("JavaScript is loaded!");
-var currentVid = "https://ramcraft.ddns.net:8082/video";
+var currentVid = "http://ramcraft.ddns.net:8082/video";
