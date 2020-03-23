@@ -28,9 +28,7 @@ function stop() {
     stopfailsafe();
 }
 function stopfailsafe() {
-    var stopfailsafe = new XMLHttpRequest();
-    stopfailsafe.open("GET","http://ramcraft.ddns.net:8080/stop");
-    stopfailsafe.send();
+    console.log("stopped");
 }
 
 function swicherydoo(){
