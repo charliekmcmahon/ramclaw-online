@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <script type="text/javascript" src="buttons.js"></script>
     <script type="text/javascript" src="requests.js"></script>
+    <script type="text/javascript" src="control.js"></script>
     <title>RamClaw Online</title>
   </head>
   <body>
@@ -27,7 +28,7 @@
     <a class="left" onmousedown="left()" onmouseup="stop()"></a>
   </nav>
   <div class="circle-button">
-    <a onclick="drop()" class="circle-button">DROP</a>
+    <a onclick="drop()" class="circle-button" id="circlebutton">DROP</a>
   </div>
   <div class="switch-button">
     <a onclick="swicherydoo()" class="switch-button">Switch Camera</a>
