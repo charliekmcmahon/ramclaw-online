@@ -1,3 +1,6 @@
+*{
+  position: relative;
+}
 body{
 
   background: rgb(97,208,149);
@@ -343,18 +346,22 @@ img{
 
 .bottom-container{
 
-  background-color: #bababa;
-  bottom: 0px;
+  background-color: #1C77C3;
   width: 100%;
   height: 150px;
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
+  color: #CBF3F0;
+  position: absolute !important;
+  bottom: 0px;
+
 }
 
 .bottom-container a{
 
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none;''
+  color: #61D095 !important;
 
 }

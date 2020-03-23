@@ -1,5 +1,5 @@
 // Code © 2020 Charlie McMahon. All Rights Reserved.
-//
+//this caused me so much pain
 var fired = false;
 
 document.onkeydown = function(event) {
