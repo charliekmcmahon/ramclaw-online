@@ -23,6 +23,7 @@ function right() {
 }
 function stop() {
     var stop = new XMLHttpRequest();
+    console.log('Stopping');
     stop.open("GET","http://ramcraft.ddns.net:8080/stop");
     stop.send();
     stopfailsafe();

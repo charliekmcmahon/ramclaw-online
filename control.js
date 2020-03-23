@@ -1,79 +1,30 @@
-document.onkeydown = checkKey;
-abc = 1;
+var fired = false;
 
-function checkKey(e) {
-
-    e = e || window.event;
-
-    if (e.keyCode == '38') {
-        up();
-        keyCode = '0'
-        checkKeyUp();
+document.onkeydown = function(event) {
+    if(!fired) {
+        fired = true;
+          if (event.keyCode == 38){
+            up();
+          }
+          else if (event.keyCode == 40){
+            down();
+          }
+          else if (event.keyCode == 37){
+            left();
+          }
+          else if (event.keyCode == 39){
+            right();
+          }
+          else if (event.keyCode == 32){
+            drop();
+          }
+          else if (event.keyCode == 83){
+            swicherydoo();
+          }
     }
-    else if (e.keyCode == '40') {
-        down();
-        keyCode = '0'
-        checkKeyUp();
-    }
-    else if (e.keyCode == '37') {
-       left();
-       keyCode = '0'
-       checkKeyUp();
-    }
-    else if (e.keyCode == '39') {
-       right();
-       keyCode = '0'
-       checkKeyUp();
-    }
-    else if (e.keyCode == '32') {
-       drop();
-       keyCode = '0'
-       checkKeyUp();
-    }
-    else if (e.keyCode == '83') {
-       swicherydoo();
-       keyCode = '0'
-       checkKeyUp();
-    }
+};
 
-}
-document.onkeyup = checkKeyUp;
-
-function checkKeyUp(a) {
-
-    a = a || window.event;
-
-    if (a.keyCode == '38') {
-        stop();
-
-    }
-    else if (a.keyCode == '40') {
-        stop();
-
-    }
-    else if (a.keyCode == '37') {
-       stop();
-
-    }
-    else if (a.keyCode == '39') {
-       stop();
-
-    }
-    else if (a.keyCode == '83') {
-       stop();
-    }
-    else if (a.keyCode == '32') {
-       stop();
-    }
-    else if (a.keyCode == '83') {
-        stop();
-    }
-
-}
-
-while (abc = 1) {
-
-    checkKey();
-    checkKeyUp();
-
-}
+document.onkeyup = function(event) {
+    fired = false;
+      stop();
+};
