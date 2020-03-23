@@ -25,7 +25,7 @@ function stop() {
     var stop = new XMLHttpRequest();
     stop.open("GET","http://ramcraft.ddns.net:8080/stop");
     stop.send();
-    stopfailsafe()
+    stopfailsafe();
 }
 function stopfailsafe() {
     var stopfailsafe = new XMLHttpRequest();
