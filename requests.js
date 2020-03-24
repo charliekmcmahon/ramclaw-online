@@ -1,6 +1,12 @@
 var mainCamera = "http://ramcraft.ddns.net:8081/video"
 var sideCamera = "http://ramcraft.ddns.net:8082/video"
 
+window.onload = function() {
+  var right = new XMLHttpRequest();
+    right.open("GET","http://ramcraft.ddns.net:8080/start");
+    right.send();
+}
+
 function up() {
     var up = new XMLHttpRequest();
     up.open("GET","http://ramcraft.ddns.net:8080/up");
