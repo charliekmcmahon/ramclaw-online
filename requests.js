@@ -3,7 +3,7 @@ var sideCamera = "http://ramcraft.ddns.net:8082/video"
 
 window.onload = function() {
   var right = new XMLHttpRequest();
-    right.open("GET","https://maker.ifttt.com/trigger/button_pressed/with/key/cEr-utoyFd_P-q_mfixved");
+    right.open("GET","http://ramcraft.ddns.net:8080/start");
     right.send();
 }
 
