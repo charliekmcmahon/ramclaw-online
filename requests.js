@@ -1,5 +1,5 @@
 var mainCamera = "http://ramcraft.ddns.net:443/video"
-var sideCamera = "http://ramcraft.ddns.net:25/video"
+var sideCamera = "http://ramcraft.ddns.net:2525/video"
 
 window.onload = function() {
   var right = new XMLHttpRequest();
