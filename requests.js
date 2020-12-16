@@ -1,4 +1,4 @@
-var mainCamera = "http://ramcraft.ddns.net:8080/video"
+var mainCamera = "http://ramcraft.ddns.net:8082/video"
 var sideCamera = "http://ramcraft.ddns.net:8081/video"
 
 window.onload = function() {
@@ -50,4 +50,4 @@ function drop() {
     drop.open("GET","http://ramcraft.ddns.net:81/drop");
     drop.send();
 }
-var currentVid = "http://ramcraft.ddns.net:8080/video";
+var currentVid = "http://ramcraft.ddns.net:8082/video";
